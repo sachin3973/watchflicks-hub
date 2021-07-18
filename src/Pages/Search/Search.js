@@ -1,7 +1,12 @@
+import SearchIcon from "@material-ui/icons/Search";
+
 const Search = () => {
   return (
     <div>
-      <span className="pageTitle">Search</span>
+      <span className="pageTitle">
+        <SearchIcon fontSize="large" />
+        Search
+      </span>
     </div>
   );
 };

@@ -1,5 +1,11 @@
 import Pagination from "@material-ui/lab/Pagination";
-import { ThemeProvider } from "@material-ui/core";
+import { createTheme, ThemeProvider } from "@material-ui/core/styles";
+
+const darkTheme = createTheme({
+  palette: {
+    type: "dark",
+  },
+});
 
 const CustomePagination = ({ setPage, numOfPages = 10 }) => {
   const handlePageChange = (page) => {
@@ -16,11 +22,14 @@ const CustomePagination = ({ setPage, numOfPages = 10 }) => {
         marginTop: 10,
       }}
     >
-      <Pagination
-        count={numOfPages}
-        onChange={(e) => handlePageChange(e.target.textContent)}
-        color="primary"
-      />
+      <ThemeProvider theme={darkTheme}>
+        <Pagination
+          count={numOfPages}
+          onChange={(e) => handlePageChange(e.target.textContent)}
+          hideNextButton
+          hidePrevButton
+        />
+      </ThemeProvider>
     </div>
   );
 };

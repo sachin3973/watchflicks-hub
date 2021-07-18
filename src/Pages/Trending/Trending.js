@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import CustomePagination from "../../components/Pagination/CustomePagination";
 import SingleContent from "../../components/SingleContent/SingleContent";
+import WhatshotIcon from "@material-ui/icons/Whatshot";
 import "./Trending.css";
 
 const Trending = () => {
@@ -17,11 +18,15 @@ const Trending = () => {
 
   useEffect(() => {
     fetchTrending();
+    // eslint-disable-next-line
   }, [page]);
 
   return (
     <div>
-      <span className="pageTitle">Trending</span>
+      <span className="pageTitle">
+        <WhatshotIcon fontSize="large" />
+        Trending
+      </span>
       <div className="trending">
         {content &&
           content.map((c) => (

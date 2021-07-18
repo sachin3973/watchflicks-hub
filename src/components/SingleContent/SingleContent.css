@@ -10,6 +10,8 @@
   font-family: "Montserrat", sans-serif;
   transition: all 0.2s;
   border: 1px solid #5f5f5f;
+  -webkit-font-smoothing: subpixel-antialiased;
+  backface-visibility: hidden;
 }
 
 .media:hover {
