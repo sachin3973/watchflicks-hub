@@ -19,6 +19,7 @@ const CustomePagination = ({ setPage, numOfPages = 10 }) => {
       <Pagination
         count={numOfPages}
         onChange={(e) => handlePageChange(e.target.textContent)}
+        color="primary"
       />
     </div>
   );

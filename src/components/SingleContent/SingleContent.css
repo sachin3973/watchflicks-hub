@@ -3,16 +3,18 @@
   flex-direction: column;
   width: 200px;
   padding: 5px;
-  margin: 5px 0;
-  background-color: #282c34;
+  margin: 10px 3px;
+  background-color: #1f2836;
   border-radius: 10px;
   position: relative;
   font-family: "Montserrat", sans-serif;
+  transition: all 0.2s;
+  border: 1px solid #5f5f5f;
 }
 
 .media:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #303d53;
+  transform: scale(1.02);
 }
 
 @media (max-width: 550px) {
