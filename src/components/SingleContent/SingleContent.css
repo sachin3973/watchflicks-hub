@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 200px;
   padding: 5px;
-  margin: 10px 3px;
+  margin: 10px 5px;
   background-color: #1f2836;
   border-radius: 10px;
   position: relative;
@@ -17,11 +17,12 @@
 .media:hover {
   background-color: #303d53;
   transform: scale(1.02);
+  cursor: pointer;
 }
 
 @media (max-width: 550px) {
   .media {
-    width: 46%;
+    width: 35%;
   }
 }
 
